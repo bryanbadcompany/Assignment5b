@@ -1,0 +1,4 @@
+.section1{visibility: hidden; position: relative; width: 600px;}
+.section2{visibility: hidden; position: absolute; right: 100px; top: -10px;}
+.section3{visibility: hidden; position: absolute; right: 100px; top: -10px;}
+.table{border: solid;}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 5</title>
+    <link rel= "stylesheet" href="Styles/Assignment5.css" type="text/css">
+    <script src="Javascript/Assignment5.js"></script>
+</head>
+
+<body>
+    <section id="titleSection" class="titleSection">
+    <h1>Customer Data Records</h1>
+    <select onchange="SectionSelect()" id="menu">
+        <option>Select a Service</option>
+        <option>Display Customer List Section</option>
+        <option>Display Order History Input</option>
+        <option>Display Order Details Input</option>
+    </select>
+    </section>
+    
+    
+    <section id="section1" class="section1">
+        <h2>
+            Display Customer List
+        </h2>
+        
+        <button onclick="getAllCustomers()">Pull Current Customer Information</button>
+
+        <br>
+        <br>
+            
+        <table id="customerResult" class="table"></table>
+        
+    </section>
+    
+    <section id="section2" class="section2">
+        <h2>
+            Display Order History
+        </h2>
+        
+        <label>Enter Customer ID</label>
+        
+        <br>
+            
+        <input type="text" id="customerIDOH">
+        
+        <br>
+        
+        <button onclick="getCustomerOrderHistory()">Order History</button>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            
+        <table id="orderHistoryTable" class="table"></table>
+        
+            
+    </section>
+    
+    <section id="section3" class="section3">
+        
+        <h2>
+            Display Order Details
+        </h2>
+        
+        <label>Enter Customer ID</label>
+        
+        <br>
+            
+        <input type="text" id="customerOrderID">
+            
+        <br>
+            
+        <button onclick="getOrdersForCustomer()">Order Details</button>
+        
+        <br>
+        
+        <table id="orderlisttable" class="table"></table>
+    </section>
+
+
+
+</body>
+</html>
